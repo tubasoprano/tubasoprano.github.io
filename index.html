@@ -2,6 +2,18 @@
 <html>
 	<head>
 		<title>Hello Furniture</title>
+		<script>
+var apiURL = "https://www.googleapis.com/drive/v3/files?corpora=user&includeItemsFromAllDrives=true&supportsAllDrives=true"
+fetch(apiUrl).then(response => {
+      return response.json();
+    }).then(data => {
+      // Work with JSON data here
+      console.log(data);
+    }).catch(err => {
+      // Do something for an error here
+	console.log(err);
+    });
+		</script>
 	</head>
 	<body>
 		<nav>
