@@ -45,6 +45,21 @@ var myAPIKey = "AIzaSyAPCTKGsmY7YFnKkKXJ29vw_9piw3xsEc4"
   });
 
 	
+
+		</script>
+	</head>
+	<body>
+		<button onclick="authenticate().then(loadClient)">authorize and load</button>
+		<button onclick="execute()">execute</button>
+	
+		<nav>
+    		<ul>
+        		<li><a href="/">A</a></li>
+	        	<li><a href="/">B</a></li>
+    		</ul>
+		</nav>
+		<div id="tableWrap"></div>
+		<script>
 //----------------------------------------------------------------------------
 
 // (A) RAW JSON DATA
@@ -809,24 +824,7 @@ for (let key in parsed) {
   }
   altRow = !altRow;
 }	
-
-	
-	
-	
-	
-	
+			
 		</script>
-	</head>
-	<body>
-		<button onclick="authenticate().then(loadClient)">authorize and load</button>
-		<button onclick="execute()">execute</button>
-	
-		<nav>
-    		<ul>
-        		<li><a href="/">A</a></li>
-	        	<li><a href="/">B</a></li>
-    		</ul>
-		</nav>
-		<div id="tableWrap"></div>
 	</body>
 </html>
