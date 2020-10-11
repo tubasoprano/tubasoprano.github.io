@@ -799,8 +799,8 @@ console.table(parsed);
 // (C) TABLE HEADER
 var theWrap = document.getElementById("tableWrap");
 var theCell = null;
-	console.log(theWrap);
-for (let key in parsed[0]) {
+var colkeys = ["id","name","thumbnailLink"];
+for (let key in colkeys) {
   theCell = document.createElement("div");
   theCell.innerHTML = key;
   theCell.classList.add("cell");
