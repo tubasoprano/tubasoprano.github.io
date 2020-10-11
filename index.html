@@ -823,12 +823,12 @@ var files = parsed["files"];
     //theCell.innerHTML = file["thumbnailLink"];
     theCell.innerHTML = "";
     theCell.classList.add("cell");
-    //if (altRow) { 
-    //  theCell.classList.add("alt"); 
-    //}
+    if (altRow) { 
+      theCell.classList.add("alt"); 
+    }
     theWrap.appendChild(theCell);
   }
-  //altRow = !altRow;
+  altRow = !altRow;
 //}	
 			
 		</script>
