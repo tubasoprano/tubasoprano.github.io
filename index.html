@@ -809,21 +809,26 @@ for (let key in parsed[0]) {
 }
 
 // (D) TABLE CELLS
-var thePic = null;
+var file = null;
 var altRow = false;
-for (let key in parsed) {
-  thePic = parsed[key];
-  for (let i in thePic) {
+//for (let key in parsed) {
+var files = parsed["files"];
+  for (let i in files) {
+    file = files[i];
     theCell = document.createElement("div");
-    theCell.innerHTML = thePic[i];
+    theCell.innerHTML = file["id"];
     theCell.classList.add("cell");
-    if (altRow) { 
-      theCell.classList.add("alt"); 
-    }
+    theCell.innerHTML = file["name"];
+    theCell.classList.add("cell");
+    theCell.innerHTML = file["thumbnailLink"];
+    theCell.classList.add("cell");
+    //if (altRow) { 
+    //  theCell.classList.add("alt"); 
+    //}
     theWrap.appendChild(theCell);
   }
-  altRow = !altRow;
-}	
+  //altRow = !altRow;
+//}	
 			
 		</script>
 	</body>
