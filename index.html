@@ -802,7 +802,7 @@ var theCell = null;
 var colkeys = ["id","name","thumbnailLink"];
 for (let key in colkeys) {
   theCell = document.createElement("div");
-  theCell.innerHTML = key;
+  theCell.innerHTML = colkeys[key];
   theCell.classList.add("cell");
   theCell.classList.add("head");
   theWrap.appendChild(theCell);
