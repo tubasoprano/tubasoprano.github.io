@@ -782,7 +782,6 @@ var parsed = JSON.parse(jsondata);
 console.table(parsed);
 
 // (C) TABLE HEADER
-document.getElementById("tableWrap").innerHTML="";
 var theWrap = document.getElementById("tableWrap");
 var theCell = null;
 	console.log(theWrap);
@@ -819,8 +818,8 @@ for (let key in parsed) {
 		</script>
 	</head>
 	<body>
-<button onclick="authenticate().then(loadClient)">authorize and load</button>
-<button onclick="execute()">execute</button>
+		<button onclick="authenticate().then(loadClient)">authorize and load</button>
+		<button onclick="execute()">execute</button>
 	
 		<nav>
     		<ul>
@@ -828,6 +827,6 @@ for (let key in parsed) {
 	        	<li><a href="/">B</a></li>
     		</ul>
 		</nav>
-
+		<div id="tableWrap"></div>
 	</body>
 </html>
