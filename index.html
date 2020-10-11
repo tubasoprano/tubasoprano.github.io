@@ -43,6 +43,773 @@ var myAPIKey = "AIzaSyAPCTKGsmY7YFnKkKXJ29vw_9piw3xsEc4"
     gapi.auth2.init({client_id: myClientID});	  
   });
 
+	
+//----------------------------------------------------------------------------
+
+// (A) RAW JSON DATA
+var JSON = `
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": [
+  {
+   "kind": "drive#file",
+   "id": "1DP8evXYHZS6zRfam9LKYRiFeb-0DwQ5S",
+   "name": "lighthouseC.JPG",
+   "mimeType": "image/jpeg",
+   "starred": false,
+   "trashed": false,
+   "explicitlyTrashed": false,
+   "parents": [
+    "1k3QmsTU9IB75eIRHHcDiY8LLuZJafwMR"
+   ],
+   "spaces": [
+    "drive"
+   ],
+   "version": "4",
+   "webContentLink": "https://drive.google.com/uc?id=1DP8evXYHZS6zRfam9LKYRiFeb-0DwQ5S&export=download",
+   "webViewLink": "https://drive.google.com/file/d/1DP8evXYHZS6zRfam9LKYRiFeb-0DwQ5S/view?usp=drivesdk",
+   "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/jpeg",
+   "hasThumbnail": true,
+   "thumbnailLink": "https://lh3.googleusercontent.com/0QTQTA6A-NvtDLmW7yzc_QVzeVkox-IRsrHcoQp82WqZuf-QBWbfBnRs9A0aSPOIt6ua62vd-30=s220",
+   "thumbnailVersion": "3",
+   "viewedByMe": true,
+   "viewedByMeTime": "2020-06-20T19:39:26.371Z",
+   "createdTime": "2020-06-20T19:39:26.371Z",
+   "modifiedTime": "2020-10-11T18:12:35.280Z",
+   "modifiedByMeTime": "2020-10-11T18:12:35.280Z",
+   "modifiedByMe": true,
+   "owners": [
+    {
+     "kind": "drive#user",
+     "displayName": "Deborah Krause",
+     "me": true,
+     "permissionId": "12585018859303203922",
+     "emailAddress": "dsk3@georgetown.edu"
+    }
+   ],
+   "lastModifyingUser": {
+    "kind": "drive#user",
+    "displayName": "Deborah Krause",
+    "me": true,
+    "permissionId": "12585018859303203922",
+    "emailAddress": "dsk3@georgetown.edu"
+   },
+   "shared": true,
+   "ownedByMe": true,
+   "capabilities": {
+    "canAddChildren": false,
+    "canAddMyDriveParent": false,
+    "canChangeCopyRequiresWriterPermission": true,
+    "canChangeViewersCanCopyContent": true,
+    "canComment": true,
+    "canCopy": true,
+    "canDelete": true,
+    "canDownload": true,
+    "canEdit": true,
+    "canListChildren": false,
+    "canModifyContent": true,
+    "canMoveChildrenWithinDrive": false,
+    "canMoveItemIntoTeamDrive": true,
+    "canMoveItemOutOfDrive": true,
+    "canMoveItemWithinDrive": true,
+    "canReadRevisions": true,
+    "canRemoveChildren": false,
+    "canRemoveMyDriveParent": true,
+    "canRename": true,
+    "canShare": true,
+    "canTrash": true,
+    "canUntrash": true
+   },
+   "viewersCanCopyContent": true,
+   "copyRequiresWriterPermission": false,
+   "writersCanShare": true,
+   "permissions": [
+    {
+     "kind": "drive#permission",
+     "id": "07922550120477416914k",
+     "type": "domain",
+     "domain": "georgetown.edu",
+     "role": "reader",
+     "allowFileDiscovery": false,
+     "displayName": "Georgetown University"
+    },
+    {
+     "kind": "drive#permission",
+     "id": "12585018859303203922",
+     "type": "user",
+     "emailAddress": "dsk3@georgetown.edu",
+     "role": "owner",
+     "displayName": "Deborah Krause",
+     "deleted": false
+    }
+   ],
+   "permissionIds": [
+    "07922550120477416914k",
+    "12585018859303203922"
+   ],
+   "originalFilename": "IMG_0618.JPG",
+   "fullFileExtension": "JPG",
+   "fileExtension": "JPG",
+   "md5Checksum": "dcf0840b723faa5e806fe3ad09270580",
+   "size": "1639924",
+   "quotaBytesUsed": "1639924",
+   "headRevisionId": "0BzoH26t2djLhbGVlSldKaWdZM2VKbm5tOVhUdHFWb3U3SVY4PQ",
+   "imageMediaMetadata": {
+    "width": 4032,
+    "height": 3024,
+    "rotation": 1,
+    "time": "2018:07:21 14:52:56",
+    "cameraMake": "Apple",
+    "cameraModel": "iPhone SE",
+    "exposureTime": 3.5100034E-4,
+    "aperture": 2.2,
+    "flashUsed": false,
+    "focalLength": 4.15,
+    "isoSpeed": 25,
+    "meteringMode": "Pattern",
+    "sensor": "One-chip color area",
+    "exposureMode": "Auto",
+    "colorSpace": "sRGB",
+    "whiteBalance": "Auto",
+    "exposureBias": 0.0
+   },
+   "isAppAuthorized": false
+  },
+  {
+   "kind": "drive#file",
+   "id": "1z5sOSsoLLdH6AHjcICz3IIwOxwk1LzDF",
+   "name": "lighthouseB.jpg",
+   "mimeType": "image/jpeg",
+   "starred": false,
+   "trashed": false,
+   "explicitlyTrashed": false,
+   "parents": [
+    "1k3QmsTU9IB75eIRHHcDiY8LLuZJafwMR"
+   ],
+   "spaces": [
+    "drive"
+   ],
+   "version": "3",
+   "webContentLink": "https://drive.google.com/uc?id=1z5sOSsoLLdH6AHjcICz3IIwOxwk1LzDF&export=download",
+   "webViewLink": "https://drive.google.com/file/d/1z5sOSsoLLdH6AHjcICz3IIwOxwk1LzDF/view?usp=drivesdk",
+   "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/jpeg",
+   "hasThumbnail": true,
+   "thumbnailLink": "https://lh3.googleusercontent.com/kMLRp-WwbFgaVeloVXhlsOArl759IZ1EKi9mUtU_7W9SbdbU_b9lg9aw4uPnP3bQFSgmVCHp-O8=s220",
+   "thumbnailVersion": "2",
+   "viewedByMe": true,
+   "viewedByMeTime": "2020-06-20T19:48:16.299Z",
+   "createdTime": "2020-06-20T19:46:44.246Z",
+   "modifiedTime": "2020-10-11T18:12:28.235Z",
+   "modifiedByMeTime": "2020-10-11T18:12:28.235Z",
+   "modifiedByMe": true,
+   "owners": [
+    {
+     "kind": "drive#user",
+     "displayName": "Deborah Krause",
+     "me": true,
+     "permissionId": "12585018859303203922",
+     "emailAddress": "dsk3@georgetown.edu"
+    }
+   ],
+   "lastModifyingUser": {
+    "kind": "drive#user",
+    "displayName": "Deborah Krause",
+    "me": true,
+    "permissionId": "12585018859303203922",
+    "emailAddress": "dsk3@georgetown.edu"
+   },
+   "shared": true,
+   "ownedByMe": true,
+   "capabilities": {
+    "canAddChildren": false,
+    "canAddMyDriveParent": false,
+    "canChangeCopyRequiresWriterPermission": true,
+    "canChangeViewersCanCopyContent": true,
+    "canComment": true,
+    "canCopy": true,
+    "canDelete": true,
+    "canDownload": true,
+    "canEdit": true,
+    "canListChildren": false,
+    "canModifyContent": true,
+    "canMoveChildrenWithinDrive": false,
+    "canMoveItemIntoTeamDrive": true,
+    "canMoveItemOutOfDrive": true,
+    "canMoveItemWithinDrive": true,
+    "canReadRevisions": true,
+    "canRemoveChildren": false,
+    "canRemoveMyDriveParent": true,
+    "canRename": true,
+    "canShare": true,
+    "canTrash": true,
+    "canUntrash": true
+   },
+   "viewersCanCopyContent": true,
+   "copyRequiresWriterPermission": false,
+   "writersCanShare": true,
+   "permissions": [
+    {
+     "kind": "drive#permission",
+     "id": "07922550120477416914k",
+     "type": "domain",
+     "domain": "georgetown.edu",
+     "role": "reader",
+     "allowFileDiscovery": false,
+     "displayName": "Georgetown University"
+    },
+    {
+     "kind": "drive#permission",
+     "id": "12585018859303203922",
+     "type": "user",
+     "emailAddress": "dsk3@georgetown.edu",
+     "role": "owner",
+     "displayName": "Deborah Krause",
+     "deleted": false
+    }
+   ],
+   "permissionIds": [
+    "07922550120477416914k",
+    "12585018859303203922"
+   ],
+   "originalFilename": "lighthouse-square.jpg",
+   "fullFileExtension": "jpg",
+   "fileExtension": "jpg",
+   "md5Checksum": "6cbc79a6b3080fdd348bee508be9dad7",
+   "size": "1013845",
+   "quotaBytesUsed": "1013845",
+   "headRevisionId": "0BzoH26t2djLhRHcyTzlQcFFOK21FT25paXBoMldKblhrQmdRPQ",
+   "imageMediaMetadata": {
+    "width": 2984,
+    "height": 2344,
+    "rotation": 0,
+    "time": "2018:07:21 14:52:56",
+    "cameraMake": "Apple",
+    "cameraModel": "iPhone SE",
+    "exposureTime": 3.5100034E-4,
+    "aperture": 2.2,
+    "flashUsed": false,
+    "focalLength": 4.15,
+    "isoSpeed": 25,
+    "meteringMode": "Pattern",
+    "sensor": "One-chip color area",
+    "exposureMode": "Auto",
+    "colorSpace": "sRGB",
+    "whiteBalance": "Auto",
+    "exposureBias": 0.0
+   },
+   "isAppAuthorized": false
+  },
+  {
+   "kind": "drive#file",
+   "id": "1--Sg93lBgGZ5BP2XoqofT2lj4yY1ZuCe",
+   "name": "lighthouseA.jpg",
+   "mimeType": "image/jpeg",
+   "starred": false,
+   "trashed": false,
+   "explicitlyTrashed": false,
+   "parents": [
+    "1k3QmsTU9IB75eIRHHcDiY8LLuZJafwMR"
+   ],
+   "spaces": [
+    "drive"
+   ],
+   "version": "6",
+   "webContentLink": "https://drive.google.com/uc?id=1--Sg93lBgGZ5BP2XoqofT2lj4yY1ZuCe&export=download",
+   "webViewLink": "https://drive.google.com/file/d/1--Sg93lBgGZ5BP2XoqofT2lj4yY1ZuCe/view?usp=drivesdk",
+   "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/jpeg",
+   "hasThumbnail": true,
+   "thumbnailLink": "https://lh3.googleusercontent.com/aH7tWPKvlFaICrgShTp_vBcOML05v0dwzViMp4UQZ2g1X7DUD9VJyvbsKv2t5pn7Wk4J765FOB0=s220",
+   "thumbnailVersion": "3",
+   "viewedByMe": true,
+   "viewedByMeTime": "2020-06-20T19:50:56.505Z",
+   "createdTime": "2020-06-20T19:50:10.862Z",
+   "modifiedTime": "2020-10-11T18:12:18.344Z",
+   "modifiedByMeTime": "2020-10-11T18:12:18.344Z",
+   "modifiedByMe": true,
+   "owners": [
+    {
+     "kind": "drive#user",
+     "displayName": "Deborah Krause",
+     "me": true,
+     "permissionId": "12585018859303203922",
+     "emailAddress": "dsk3@georgetown.edu"
+    }
+   ],
+   "lastModifyingUser": {
+    "kind": "drive#user",
+    "displayName": "Deborah Krause",
+    "me": true,
+    "permissionId": "12585018859303203922",
+    "emailAddress": "dsk3@georgetown.edu"
+   },
+   "shared": true,
+   "ownedByMe": true,
+   "capabilities": {
+    "canAddChildren": false,
+    "canAddMyDriveParent": false,
+    "canChangeCopyRequiresWriterPermission": true,
+    "canChangeViewersCanCopyContent": true,
+    "canComment": true,
+    "canCopy": true,
+    "canDelete": true,
+    "canDownload": true,
+    "canEdit": true,
+    "canListChildren": false,
+    "canModifyContent": true,
+    "canMoveChildrenWithinDrive": false,
+    "canMoveItemIntoTeamDrive": true,
+    "canMoveItemOutOfDrive": true,
+    "canMoveItemWithinDrive": true,
+    "canReadRevisions": true,
+    "canRemoveChildren": false,
+    "canRemoveMyDriveParent": true,
+    "canRename": true,
+    "canShare": true,
+    "canTrash": true,
+    "canUntrash": true
+   },
+   "viewersCanCopyContent": true,
+   "copyRequiresWriterPermission": false,
+   "writersCanShare": true,
+   "permissions": [
+    {
+     "kind": "drive#permission",
+     "id": "07922550120477416914k",
+     "type": "domain",
+     "domain": "georgetown.edu",
+     "role": "reader",
+     "allowFileDiscovery": false,
+     "displayName": "Georgetown University"
+    },
+    {
+     "kind": "drive#permission",
+     "id": "12585018859303203922",
+     "type": "user",
+     "emailAddress": "dsk3@georgetown.edu",
+     "role": "owner",
+     "displayName": "Deborah Krause",
+     "deleted": false
+    }
+   ],
+   "permissionIds": [
+    "07922550120477416914k",
+    "12585018859303203922"
+   ],
+   "originalFilename": "lighthouse-square-S.jpg",
+   "fullFileExtension": "jpg",
+   "fileExtension": "jpg",
+   "md5Checksum": "cb0ef296a976fd29a857259c5f76aea9",
+   "size": "591945",
+   "quotaBytesUsed": "591945",
+   "headRevisionId": "0BzoH26t2djLhZ080MTd5TGtuVGx1eUZOL3JrSUFUdC9uUUlZPQ",
+   "imageMediaMetadata": {
+    "width": 2984,
+    "height": 1678,
+    "rotation": 0,
+    "time": "2020:06:20 15:50:42",
+    "cameraMake": "Apple",
+    "cameraModel": "iPhone SE",
+    "exposureTime": 3.5100034E-4,
+    "aperture": 2.2,
+    "flashUsed": false,
+    "focalLength": 4.15,
+    "isoSpeed": 25,
+    "meteringMode": "Pattern",
+    "sensor": "One-chip color area",
+    "exposureMode": "Auto",
+    "colorSpace": "sRGB",
+    "whiteBalance": "Auto",
+    "exposureBias": 0.0
+   },
+   "isAppAuthorized": false
+  },
+  {
+   "kind": "drive#file",
+   "id": "1bRdK5iX-okl4KjaUlhdXXXqGTLTQ4TAR",
+   "name": "Copy of lighthouse.JPG",
+   "mimeType": "image/jpeg",
+   "starred": false,
+   "trashed": false,
+   "explicitlyTrashed": false,
+   "parents": [
+    "0ADoH26t2djLhUk9PVA"
+   ],
+   "spaces": [
+    "drive"
+   ],
+   "version": "3",
+   "webContentLink": "https://drive.google.com/uc?id=1bRdK5iX-okl4KjaUlhdXXXqGTLTQ4TAR&export=download",
+   "webViewLink": "https://drive.google.com/file/d/1bRdK5iX-okl4KjaUlhdXXXqGTLTQ4TAR/view?usp=drivesdk",
+   "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/jpeg",
+   "hasThumbnail": true,
+   "thumbnailLink": "https://lh3.googleusercontent.com/ke7-3zYylG2KkPEUTgskk5wW62ZTO_ug53UnvliGBiZgSIIZUfjCrdnloHT5QvRLx_rEq26bXXM=s220",
+   "thumbnailVersion": "1",
+   "viewedByMe": true,
+   "viewedByMeTime": "2020-10-11T18:11:28.912Z",
+   "createdTime": "2020-10-11T18:11:28.912Z",
+   "modifiedTime": "2020-10-11T18:11:28.912Z",
+   "modifiedByMeTime": "2020-10-11T18:11:28.912Z",
+   "modifiedByMe": true,
+   "owners": [
+    {
+     "kind": "drive#user",
+     "displayName": "Deborah Krause",
+     "me": true,
+     "permissionId": "12585018859303203922",
+     "emailAddress": "dsk3@georgetown.edu"
+    }
+   ],
+   "lastModifyingUser": {
+    "kind": "drive#user",
+    "displayName": "Deborah Krause",
+    "me": true,
+    "permissionId": "12585018859303203922",
+    "emailAddress": "dsk3@georgetown.edu"
+   },
+   "shared": false,
+   "ownedByMe": true,
+   "capabilities": {
+    "canAddChildren": false,
+    "canAddMyDriveParent": false,
+    "canChangeCopyRequiresWriterPermission": true,
+    "canChangeViewersCanCopyContent": true,
+    "canComment": true,
+    "canCopy": true,
+    "canDelete": true,
+    "canDownload": true,
+    "canEdit": true,
+    "canListChildren": false,
+    "canModifyContent": true,
+    "canMoveChildrenWithinDrive": false,
+    "canMoveItemIntoTeamDrive": true,
+    "canMoveItemOutOfDrive": true,
+    "canMoveItemWithinDrive": true,
+    "canReadRevisions": true,
+    "canRemoveChildren": false,
+    "canRemoveMyDriveParent": true,
+    "canRename": true,
+    "canShare": true,
+    "canTrash": true,
+    "canUntrash": true
+   },
+   "viewersCanCopyContent": true,
+   "copyRequiresWriterPermission": false,
+   "writersCanShare": true,
+   "permissions": [
+    {
+     "kind": "drive#permission",
+     "id": "12585018859303203922",
+     "type": "user",
+     "emailAddress": "dsk3@georgetown.edu",
+     "role": "owner",
+     "displayName": "Deborah Krause",
+     "deleted": false
+    }
+   ],
+   "permissionIds": [
+    "12585018859303203922"
+   ],
+   "originalFilename": "Copy of lighthouse.JPG",
+   "fullFileExtension": "JPG",
+   "fileExtension": "JPG",
+   "md5Checksum": "dcf0840b723faa5e806fe3ad09270580",
+   "size": "1639924",
+   "quotaBytesUsed": "1639924",
+   "headRevisionId": "0BzoH26t2djLhOFRGZ0YrZlFsWEgxYWdOWkY0bEhoYzZhOEFnPQ",
+   "imageMediaMetadata": {
+    "width": 4032,
+    "height": 3024,
+    "rotation": 1,
+    "time": "2018:07:21 14:52:56",
+    "cameraMake": "Apple",
+    "cameraModel": "iPhone SE",
+    "exposureTime": 3.5100034E-4,
+    "aperture": 2.2,
+    "flashUsed": false,
+    "focalLength": 4.15,
+    "isoSpeed": 25,
+    "meteringMode": "Pattern",
+    "sensor": "One-chip color area",
+    "exposureMode": "Auto",
+    "colorSpace": "sRGB",
+    "whiteBalance": "Auto",
+    "exposureBias": 0.0
+   },
+   "isAppAuthorized": false
+  },
+  {
+   "kind": "drive#file",
+   "id": "1FTlUbLcG4BfVSz3DslW37eSeM9kRDT0m",
+   "name": "Copy of lighthouse-square-S.jpg",
+   "mimeType": "image/jpeg",
+   "starred": false,
+   "trashed": false,
+   "explicitlyTrashed": false,
+   "parents": [
+    "0ADoH26t2djLhUk9PVA"
+   ],
+   "spaces": [
+    "drive"
+   ],
+   "version": "3",
+   "webContentLink": "https://drive.google.com/uc?id=1FTlUbLcG4BfVSz3DslW37eSeM9kRDT0m&export=download",
+   "webViewLink": "https://drive.google.com/file/d/1FTlUbLcG4BfVSz3DslW37eSeM9kRDT0m/view?usp=drivesdk",
+   "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/jpeg",
+   "hasThumbnail": true,
+   "thumbnailLink": "https://lh3.googleusercontent.com/nAOZRPQOG3AuYAwuOiogllMpjnE6Tx7wVc3cQ5PUXkWU4EjriGEwvCRvfZ23O6ZOxf_L1p3i_zY=s220",
+   "thumbnailVersion": "1",
+   "viewedByMe": true,
+   "viewedByMeTime": "2020-10-11T18:11:28.912Z",
+   "createdTime": "2020-10-11T18:11:28.912Z",
+   "modifiedTime": "2020-10-11T18:11:28.912Z",
+   "modifiedByMeTime": "2020-10-11T18:11:28.912Z",
+   "modifiedByMe": true,
+   "owners": [
+    {
+     "kind": "drive#user",
+     "displayName": "Deborah Krause",
+     "me": true,
+     "permissionId": "12585018859303203922",
+     "emailAddress": "dsk3@georgetown.edu"
+    }
+   ],
+   "lastModifyingUser": {
+    "kind": "drive#user",
+    "displayName": "Deborah Krause",
+    "me": true,
+    "permissionId": "12585018859303203922",
+    "emailAddress": "dsk3@georgetown.edu"
+   },
+   "shared": false,
+   "ownedByMe": true,
+   "capabilities": {
+    "canAddChildren": false,
+    "canAddMyDriveParent": false,
+    "canChangeCopyRequiresWriterPermission": true,
+    "canChangeViewersCanCopyContent": true,
+    "canComment": true,
+    "canCopy": true,
+    "canDelete": true,
+    "canDownload": true,
+    "canEdit": true,
+    "canListChildren": false,
+    "canModifyContent": true,
+    "canMoveChildrenWithinDrive": false,
+    "canMoveItemIntoTeamDrive": true,
+    "canMoveItemOutOfDrive": true,
+    "canMoveItemWithinDrive": true,
+    "canReadRevisions": true,
+    "canRemoveChildren": false,
+    "canRemoveMyDriveParent": true,
+    "canRename": true,
+    "canShare": true,
+    "canTrash": true,
+    "canUntrash": true
+   },
+   "viewersCanCopyContent": true,
+   "copyRequiresWriterPermission": false,
+   "writersCanShare": true,
+   "permissions": [
+    {
+     "kind": "drive#permission",
+     "id": "12585018859303203922",
+     "type": "user",
+     "emailAddress": "dsk3@georgetown.edu",
+     "role": "owner",
+     "displayName": "Deborah Krause",
+     "deleted": false
+    }
+   ],
+   "permissionIds": [
+    "12585018859303203922"
+   ],
+   "originalFilename": "Copy of lighthouse-square-S.jpg",
+   "fullFileExtension": "jpg",
+   "fileExtension": "jpg",
+   "md5Checksum": "cb0ef296a976fd29a857259c5f76aea9",
+   "size": "591945",
+   "quotaBytesUsed": "591945",
+   "headRevisionId": "0BzoH26t2djLheTY4MlJCMzFZOVR3VmllOXVSc1NuSG5mcFRnPQ",
+   "imageMediaMetadata": {
+    "width": 2984,
+    "height": 1678,
+    "rotation": 0,
+    "time": "2020:06:20 15:50:42",
+    "cameraMake": "Apple",
+    "cameraModel": "iPhone SE",
+    "exposureTime": 3.5100034E-4,
+    "aperture": 2.2,
+    "flashUsed": false,
+    "focalLength": 4.15,
+    "isoSpeed": 25,
+    "meteringMode": "Pattern",
+    "sensor": "One-chip color area",
+    "exposureMode": "Auto",
+    "colorSpace": "sRGB",
+    "whiteBalance": "Auto",
+    "exposureBias": 0.0
+   },
+   "isAppAuthorized": false
+  },
+  {
+   "kind": "drive#file",
+   "id": "1C4whdMKCliOW_nlMpHX5JpMSskNtg6B1",
+   "name": "Copy of lighthouse-square.jpg",
+   "mimeType": "image/jpeg",
+   "starred": false,
+   "trashed": false,
+   "explicitlyTrashed": false,
+   "parents": [
+    "0ADoH26t2djLhUk9PVA"
+   ],
+   "spaces": [
+    "drive"
+   ],
+   "version": "3",
+   "webContentLink": "https://drive.google.com/uc?id=1C4whdMKCliOW_nlMpHX5JpMSskNtg6B1&export=download",
+   "webViewLink": "https://drive.google.com/file/d/1C4whdMKCliOW_nlMpHX5JpMSskNtg6B1/view?usp=drivesdk",
+   "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/jpeg",
+   "hasThumbnail": true,
+   "thumbnailLink": "https://lh3.googleusercontent.com/9umANUO705ORhiVmRjn_XUIJiutq4A7h6yk5TuxErJYbnDHFM36SLBcKuEG6KzvuJhUX6tXjZXA=s220",
+   "thumbnailVersion": "1",
+   "viewedByMe": true,
+   "viewedByMeTime": "2020-10-11T18:11:28.912Z",
+   "createdTime": "2020-10-11T18:11:28.912Z",
+   "modifiedTime": "2020-10-11T18:11:28.912Z",
+   "modifiedByMeTime": "2020-10-11T18:11:28.912Z",
+   "modifiedByMe": true,
+   "owners": [
+    {
+     "kind": "drive#user",
+     "displayName": "Deborah Krause",
+     "me": true,
+     "permissionId": "12585018859303203922",
+     "emailAddress": "dsk3@georgetown.edu"
+    }
+   ],
+   "lastModifyingUser": {
+    "kind": "drive#user",
+    "displayName": "Deborah Krause",
+    "me": true,
+    "permissionId": "12585018859303203922",
+    "emailAddress": "dsk3@georgetown.edu"
+   },
+   "shared": false,
+   "ownedByMe": true,
+   "capabilities": {
+    "canAddChildren": false,
+    "canAddMyDriveParent": false,
+    "canChangeCopyRequiresWriterPermission": true,
+    "canChangeViewersCanCopyContent": true,
+    "canComment": true,
+    "canCopy": true,
+    "canDelete": true,
+    "canDownload": true,
+    "canEdit": true,
+    "canListChildren": false,
+    "canModifyContent": true,
+    "canMoveChildrenWithinDrive": false,
+    "canMoveItemIntoTeamDrive": true,
+    "canMoveItemOutOfDrive": true,
+    "canMoveItemWithinDrive": true,
+    "canReadRevisions": true,
+    "canRemoveChildren": false,
+    "canRemoveMyDriveParent": true,
+    "canRename": true,
+    "canShare": true,
+    "canTrash": true,
+    "canUntrash": true
+   },
+   "viewersCanCopyContent": true,
+   "copyRequiresWriterPermission": false,
+   "writersCanShare": true,
+   "permissions": [
+    {
+     "kind": "drive#permission",
+     "id": "12585018859303203922",
+     "type": "user",
+     "emailAddress": "dsk3@georgetown.edu",
+     "role": "owner",
+     "displayName": "Deborah Krause",
+     "deleted": false
+    }
+   ],
+   "permissionIds": [
+    "12585018859303203922"
+   ],
+   "originalFilename": "Copy of lighthouse-square.jpg",
+   "fullFileExtension": "jpg",
+   "fileExtension": "jpg",
+   "md5Checksum": "6cbc79a6b3080fdd348bee508be9dad7",
+   "size": "1013845",
+   "quotaBytesUsed": "1013845",
+   "headRevisionId": "0BzoH26t2djLhVnhtaFpZY1pROGVTK1JhK3NxTm9SeG1vVFBBPQ",
+   "imageMediaMetadata": {
+    "width": 2984,
+    "height": 2344,
+    "rotation": 0,
+    "time": "2018:07:21 14:52:56",
+    "cameraMake": "Apple",
+    "cameraModel": "iPhone SE",
+    "exposureTime": 3.5100034E-4,
+    "aperture": 2.2,
+    "flashUsed": false,
+    "focalLength": 4.15,
+    "isoSpeed": 25,
+    "meteringMode": "Pattern",
+    "sensor": "One-chip color area",
+    "exposureMode": "Auto",
+    "colorSpace": "sRGB",
+    "whiteBalance": "Auto",
+    "exposureBias": 0.0
+   },
+   "isAppAuthorized": false
+  }
+ ]
+}
+
+`;
+
+// (B) PARSE JSON INTO OBJECT
+var parsed = JSON.parse(jsondata);
+console.table(parsed);
+
+// (C) TABLE HEADER
+var theWrap = document.getElementById("tableWrap");
+var theCell = null;
+for (let key in parsed[0]) {
+  theCell = document.createElement("div");
+  theCell.innerHTML = key;
+  theCell.classList.add("cell");
+  theCell.classList.add("head");
+  theWrap.appendChild(theCell);
+}
+
+// (D) TABLE CELLS
+var thePerson = null;
+var altRow = false;
+for (let key in parsed) {
+  thePic = parsed[key];
+  for (let i in thePic) {
+    theCell = document.createElement("div");
+    theCell.innerHTML = thePic[i];
+    theCell.classList.add("cell");
+    if (altRow) { 
+      theCell.classList.add("alt"); 
+    }
+    theWrap.appendChild(theCell);
+  }
+  altRow = !altRow;
+}	
+	
+	
+	
+	
+	
+	
+	
+	
 		</script>
 	</head>
 	<body>
