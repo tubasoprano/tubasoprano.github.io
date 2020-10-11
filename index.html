@@ -47,7 +47,7 @@ var myAPIKey = "AIzaSyAPCTKGsmY7YFnKkKXJ29vw_9piw3xsEc4"
 //----------------------------------------------------------------------------
 
 // (A) RAW JSON DATA
-var jsondata = `
+var jsondata2 = `
 {
  "kind": "drive#fileList",
  "incompleteSearch": false,
@@ -770,6 +770,11 @@ var jsondata = `
 }
 
 `;
+
+var jsondata = '[{"Name":"John Doe","Email":"john@doe.com","Gender":"male"},'
++ '{"Name":"Jane Doe","Email":"jane@doe.com","Gender":"female"},'
++ '{"Name":"Joseph Doe","Email":"joseph@doe.com","Gender":"male"},'
++ '{"Name":"Joanne Doe","Email":"joanne@doe.com","Gender":"female"}]';
 
 // (B) PARSE JSON INTO OBJECT
 var parsed = JSON.parse(jsondata);
