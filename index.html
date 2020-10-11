@@ -818,12 +818,16 @@ var files = parsed["files"];
     theCell = document.createElement("div");
     theCell.innerHTML = file["id"];
     theCell.classList.add("cell");
-theWrap.appendChild(theCell);
+    theWrap.appendChild(theCell);
+	  
+    theCell = document.createElement("div");
     theCell.innerHTML = file["name"];
     theCell.classList.add("cell");
-theWrap.appendChild(theCell);
+    theWrap.appendChild(theCell);
+	  
+    theCell = document.createElement("div");
     //theCell.innerHTML = file["thumbnailLink"];
-    theCell.innerHTML = "";
+    theCell.innerHTML = "Fakedata";
     theCell.classList.add("cell");
     if (altRow) { 
       theCell.classList.add("alt"); 
