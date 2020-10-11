@@ -9,6 +9,7 @@
    * See instructions for running APIs Explorer code samples locally:
    * https://developers.google.com/explorer-help/guides/code_samples#javascript
    */
+var myClientID = "647323359463-tnoqqk8mqm45s7e429tdk6bmil0kd4ef.apps.googleusercontent.com"
 
   function authenticate() {
     return gapi.auth2.getAuthInstance()
@@ -36,7 +37,8 @@
               function(err) { console.error("Execute error", err); });
   }
   gapi.load("client:auth2", function() {
-    gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
+    //gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
+    gapi.auth2.init({client_id: myClientID});	  
   });
 
 		</script>
