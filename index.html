@@ -10,6 +10,7 @@
    * https://developers.google.com/explorer-help/guides/code_samples#javascript
    */
 var myClientID = "647323359463-tnoqqk8mqm45s7e429tdk6bmil0kd4ef.apps.googleusercontent.com"
+var myAPIKey = "AIzaSyAPCTKGsmY7YFnKkKXJ29vw_9piw3xsEc4"
 
   function authenticate() {
     return gapi.auth2.getAuthInstance()
@@ -18,7 +19,8 @@ var myClientID = "647323359463-tnoqqk8mqm45s7e429tdk6bmil0kd4ef.apps.googleuserc
               function(err) { console.error("Error signing in", err); });
   }
   function loadClient() {
-    gapi.client.setApiKey("YOUR_API_KEY");
+    //gapi.client.setApiKey("YOUR_API_KEY");
+    gapi.client.setApiKey(myAPIKey);
     return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/drive/v3/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
               function(err) { console.error("Error loading GAPI client for API", err); });
