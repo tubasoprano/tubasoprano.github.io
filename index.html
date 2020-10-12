@@ -826,7 +826,7 @@ var files = parsed["files"];
     theWrap.appendChild(theCell);
 	  
     theCell = document.createElement("div");
-    theCell.innerHTML = `<a target="_blank" href="${file["webViewLink"]}"><img src="${file["webViewLink"]}" alt="Forest"></a>`;
+    theCell.innerHTML = `<a target="_blank" href="${file["webViewLink"]}"><img src="${file["webViewLink"]}" crossorigin="use-credentials" alt="${file["name"]}"></a>`;
 	  
     //theCell.innerHTML = "Fakedata";
     theCell.classList.add("cell");
