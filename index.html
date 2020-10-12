@@ -826,8 +826,9 @@ var files = parsed["files"];
     theWrap.appendChild(theCell);
 	  
     theCell = document.createElement("div");
-    //theCell.innerHTML = file["thumbnailLink"];
-    theCell.innerHTML = "Fakedata";
+    theCell.innerHTML = `<a target="_blank" href="${file["webViewLink"]}"><img src="${file["thumbnailLink"]}" alt="Forest"></a>`;
+	  
+    //theCell.innerHTML = "Fakedata";
     theCell.classList.add("cell");
     if (altRow) { 
       theCell.classList.add("alt"); 
